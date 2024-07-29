@@ -1,7 +1,8 @@
-/* UN CSS BASICO PARA DESPUES MODIFICAR*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -27,23 +28,34 @@ header {
 .slogan {
     font-size: 1.2em;
     color: #555;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.main-nav {
+    margin-left: auto;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: #f04b4e;
 }
 
 /* Secciones */
@@ -59,6 +71,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
