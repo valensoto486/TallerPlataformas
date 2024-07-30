@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que la pag se adapte a cualquier dispositivo :) -->
-    <meta name="description" content="Bienvenido a Comidas AV, tu destino para una experiencia gastronómica de comidas rápidas excepcionales.">
-    <title>My Landing Page</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <!-- MI HEADER -- ENCABEZADO--> 
-    <header>
-        <div class="header-content">
-            <img src="logo.png" class="logo">
-            <span class="slogan">El Mejor Sabor en Cada Bocado</span>
-            
-            <nav class ="main-nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="contact.html">Contáctenos</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="home">
-        <h1>Bienvenido a Mi Landing Page</h1>
-        <p>DESCRIPCION!!</p>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Landing Page</title>
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <!-- MI HEADER -- ENCABEZADO--> 
+        <header class="main-header">
+            <div class="header-wrap">
+                <div class="wrap-logo-header">
+                    <a href="/" class="logo-header">
+                        Comidas<span>Rapidas</span><span>AV</span>
+                    </a>
+                </div>
+                
+                <div class="wrap-nav-header">
+                    <nav class="nav-header">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="toggle-menu">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNjggMzJoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM2OCAyNzcuMzMyMDMxaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiPjwvcGF0aD48L2c+PC9zdmc+" />
+                            </i>
 
-   <!-- MI FOOTER O PIE DE PAGINA--> 
-    <footer>
-        <p>&copy; 2024 Comidas AV. Todos los derechos reservados.</p>
-        <p>Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
-        <p>Teléfono: +57 3157527899</p>
-        <p>Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
-    </footer>
-    <script src="main.js"></script>
-</body>
+                        </label>
+                        <ul class="main-menu">
+                            <li class="menu-item"><a href="index.html">Inicio</a></li>
+                            <li class="menu-item"><a href="contact.html">Contactenos</a></li>
+                            <li class="menu-item"><a href="about.html">Sobre Nosotros</a></li>
+                            <li class="menu-item"><a id="nav-main-contact" href="/">Whatsapp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="hero"></div>
+    </body>
 </html>
