@@ -14,8 +14,11 @@ li{
 }
 
 .hero{
-    background-color: orange;
+    background-image: url("https://i.postimg.cc/mZFGJXZ3/Whats-App-Image-2024-07-30-at-7-57-34-AM.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
+    background-color: rgb(40, 6, 6); /*Por defecto si no funciona mi imagen*/
 }
 
 /* Menu Header Restaurante */
@@ -25,7 +28,12 @@ header.main-header{
     top: 0;
     width: 100%;
     z-index: 9999;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
    
 .header-wrap{
     display: flex;
@@ -36,9 +44,16 @@ header.main-header{
 }
    
 .wrap-logo-header{
-    display: flex;
-    align-items: center;
-    flex-basis: 15%;
+    position:absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    flex-shrink: 0;
+}
+
+.logo-header img {
+    width: 120px; /* Ajusto el logo */
+    height: auto; 
 }
    
 .logo-header{
@@ -72,13 +87,14 @@ ul.main-menu #nav-main-contact{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    background-color: green;
+    background-color: rgb(98, 37, 15);
     color: #fff;
 }
    
 li.menu-item{
     margin: .75rem;
     display: flex;
+    margin-left: 20px;
 }
    
 li.menu-item a{
