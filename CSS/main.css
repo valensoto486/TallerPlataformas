@@ -14,7 +14,7 @@ li{
 }
 
 .hero{
-    background-image: url("https://i.postimg.cc/mZFGJXZ3/Whats-App-Image-2024-07-30-at-7-57-34-AM.jpg");
+    background-image: url("https://i.postimg.cc/66MzmL2f/Whats-App-Image-2024-07-30-at-10-12-55-AM.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -28,8 +28,7 @@ header.main-header{
     top: 0;
     width: 100%;
     z-index: 9999;
-    padding: 10px 20px;
-    display: flex;
+    padding: 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -122,11 +121,102 @@ input#check{
     display: none;
 }
 
+.container{
+    position: relative;
+    height: 100vh;
+}
+
+form{
+    position: absolute;
+    top: 70px;
+    right: 40px; 
+    width: 100%;
+    max-width: 450px; 
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    color: rgb(114, 42, 9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+}
+
+/* Estilo para los campos de entrada y área de texto */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ffaa00; 
+    border: none;
+    border-radius: 7px;
+    color: rgb(114, 42, 9);
+    cursor: pointer;
+    width:100%;
+}
+
+form button:hover {
+    background-color: #e0a700; 
+}
+
+.beneficios{
+    position: absolute;
+    top: 380px;
+    right: 25px; 
+    width: 100%;
+    max-width: 480px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 9999;
+    height: auto; 
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px
+}
 
 @media (min-width:880px){
     .header-wrap{
       padding: .5rem 5rem;
     }
+    
 }
    
 @media (max-width:768px){
@@ -177,5 +267,52 @@ input#check{
         height: 100vh;
         top: 0;
         font-size: 2rem;
+    }
+
+    .beneficios{
+        position: absolute;
+        top: 360px;
+        right: 0; 
+        width: 50%;
+        max-width: 350px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 9999;
+        height: auto;
+    }
+    form{
+        position: absolute;
+        top: 70px;
+        right: 10px; 
+        width: 50%;
+        max-width: 300px; 
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8); 
+        color: rgb(114, 42, 9);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(50% - 10px);
+    }
+    .contact-form {
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .beneficios {
+        font-size: 14px; 
+        max-width: 100%;
+    }
+
+    form {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 15px;
     }
 }
