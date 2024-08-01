@@ -17,7 +17,7 @@ li{
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-color: rgb(32, 13, 6); /*Por defecto si no funciona mi imagen*/
+    background-color: rgba(32, 13, 6, 0.886); /*Por defecto si no funciona mi imagen*/
 }
 
 /* Menu Header */
@@ -244,6 +244,60 @@ form button:hover {
     object-fit: cover;
 }
 
+
+/*GALERIA -> IMG DEL LUGAR COMO TAL */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* VIDEO DE YOUTUBE */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción de 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width:880px){
     .header-wrap{
       padding: .5rem 5rem;
@@ -341,6 +395,8 @@ form button:hover {
         overflow: hidden;
         border: 2px solid #dddddd55; 
     }
+
+
 
 }
 
