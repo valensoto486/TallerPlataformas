@@ -14,14 +14,13 @@ li{
 }
 
 .hero{
-    background-image: url("https://i.postimg.cc/66MzmL2f/Whats-App-Image-2024-07-30-at-10-12-55-AM.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-color: rgb(40, 6, 6); /*Por defecto si no funciona mi imagen*/
+    background-color: rgb(32, 13, 6); /*Por defecto si no funciona mi imagen*/
 }
 
-/* Menu Header Restaurante */
+/* Menu Header */
  
 header.main-header{
     position: fixed;
@@ -37,6 +36,7 @@ header.main-header{
 .header-wrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: #fff;
     z-index: 999;
@@ -51,7 +51,7 @@ header.main-header{
 }
 
 .logo-header img {
-    width: 120px; /* Ajusto el logo */
+    width: 120px; 
     height: auto; 
 }
    
@@ -63,8 +63,11 @@ header.main-header{
    
 .nav-header{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
+    flex-grow: 1;
+    padding-left: 80%;
 }
    
 .nav-wrap-header{
@@ -80,6 +83,7 @@ ul.main-menu{
     padding: 0;
     justify-content: space-between;
     font-size: 1.1rem;
+    gap: 10px;
 }
    
 ul.main-menu #nav-main-contact{
@@ -88,6 +92,7 @@ ul.main-menu #nav-main-contact{
     padding: .5rem 1rem;
     background-color: rgb(98, 37, 15);
     color: #fff;
+    
 }
    
 li.menu-item{
@@ -128,8 +133,8 @@ input#check{
 
 form{
     position: absolute;
-    top: 70px;
-    right: 40px; 
+    top: 85px;
+    right: 70px; 
     width: 100%;
     max-width: 450px; 
     padding: 20px;
@@ -146,7 +151,6 @@ form label {
     font-weight: bold;
 }
 
-/* Estilo para los campos de entrada y área de texto */
 form input[type="text"],
 form input[type="email"],
 form textarea {
@@ -174,7 +178,7 @@ form button:hover {
 .beneficios{
     position: absolute;
     top: 380px;
-    right: 25px; 
+    right: 55px; 
     width: 100%;
     max-width: 480px;
     color: white;
@@ -212,6 +216,34 @@ form button:hover {
     padding: 10px
 }
 
+/* ROTADOR DE BANNERS */
+.banner-carousel {
+    position: absolute;
+    top: 55%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 500px; 
+    height: 530px; 
+    overflow: hidden;
+    border: 2px solid #dddddd55; 
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (min-width:880px){
     .header-wrap{
       padding: .5rem 5rem;
@@ -236,7 +268,7 @@ form button:hover {
     .wrap-logo-header{
         position: fixed;
         z-index: 999;
-        top: 3%;
+        top: 5%;
         left: 3%;
     }
     i.toggle-menu{
@@ -251,6 +283,7 @@ form button:hover {
     ul.main-menu{
         position: fixed;
         background-color: #fff;
+        z-index: 10000;
     }
     label.checkbtn{
         position: fixed;
@@ -278,7 +311,7 @@ form button:hover {
         color: white;
         padding: 10px;
         border-radius: 5px;
-        z-index: 9999;
+        z-index: 1;
         height: auto;
     }
     form{
@@ -297,6 +330,16 @@ form button:hover {
     .contact-form {
         padding: 10px;
         margin: 10px;
+    }
+    .banner-carousel {
+        position: absolute;
+        top: 55%;
+        left: 15px;
+        transform: translateY(-50%);
+        width: 300px; 
+        height: 400px; 
+        overflow: hidden;
+        border: 2px solid #dddddd55; 
     }
 
 }

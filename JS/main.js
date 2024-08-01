@@ -1,15 +1,16 @@
-//BASE MUY BASICA DE UN SCRIPT PARA EL MANEJO DE ENVIO DE FORMULARIOS
+
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contact-form');
+    const container = document.querySelector('.carousel-container');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+    let currentIndex = 0;
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault(); // Evita el envío del formulario
+    function showNextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        const offset = -currentIndex * 100;
+        container.style.transform = `translateX(${offset}%)`;
+    }
 
-        const email = document.getElementById('email').value;
-        
-        // Aquí podrías enviar el email a un servidor o procesarlo de alguna manera
-        alert(`Gracias por suscribirte con el email: ${email}`);
-        
-        form.reset(); // Limpia el formulario
-    });
+    // Cambiar de imagen cada 6 segundos
+    setInterval(showNextSlide, 6000);
 });
