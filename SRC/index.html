@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Landing Page</title>
         <link rel="stylesheet" href="CSS/main.css">
+        <script type="module" src="JS/idioma.js"></script>
       </head>
     <body>
         <!-- MI HEADER -- ENCABEZADO--> 
@@ -27,9 +28,11 @@
 
                         </label>
                         <ul class="main-menu">
-                            <li class="menu-item"><a href="index.html">Inicio</a></li>
-                            <li class="menu-item"><a href="contact.html">Contactenos</a></li>
-                            <li class="menu-item"><a href="about.html">Sobre Nosotros</a></li>
+                            <a href="javascript:void(0)" idioma="en" id="btn_en">EN</a>
+                            <a href="javascript:void(0)" idioma="es" id="btn_es">ES</a>
+                            <li class="menu-item"><a href="index.html" id="menu_1">Inicio</a></li>
+                            <li class="menu-item"><a href="contact.html" id="menu_2">Contactenos</a></li>
+                            <li class="menu-item"><a href="about.html" id="menu_3">Sobre Nosotros</a></li>
                             <li class="menu-item"><a id="nav-main-contact" href="https://web.whatsapp.com/">Whatsapp</a></li>
                         </ul>
                     </nav>
@@ -40,18 +43,18 @@
             <!-- FORMULARIO DESCUENTOS -->
             <div class="container">
                 <form action="https://formspree.io/f/xldrbwnq" method="post">
-                    <h1>Recibe Descuentos</h1>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <h1 id="formulario_1">Recibe Descuentos</h1>
+                    <label for="nombre" id="formulario_2">Nombre:</label>
+                    <input type="text"  name="nombre" required>
 
-                    <label for="email">Correo Electrónico:</label>
+                    <label for="email" id="formulario_3">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="formulario_4">Enviar</button>
                 </form>
                 <div class="beneficios">
-                    <h1>¡NO TE PIERDAS LA FIESTA DEL AHORRO!</h1>
-                    <d1> Recibe mensajes con nuestros imperdibles descuentos, obten tu pase VIP para ahorrar y disfrutar mas.</d1>
+                    <h1 id="beneficios_1">¡NO TE PIERDAS LA FIESTA DEL AHORRO!</h1>
+                    <d1 id="beneficios_2"> Recibe mensajes con nuestros imperdibles descuentos, obten tu pase VIP para ahorrar y disfrutar mas.</d1>
                 </div>
                 
                 <!-- ROTADOR DE BANNERS -->
@@ -101,10 +104,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     
         <footer>
-            <p>&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
-            <p>Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
-            <p>Teléfono: +57 3157527899</p>
-            <p>Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
+            <p id="footer_1">&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
+            <p id="footer_2">Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
+            <p id="footer_3">Teléfono: +57 3157527899</p>
+            <p id="footer_4">Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
         </footer>
         <script src="JS/main.js"></script>
     </body>

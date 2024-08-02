@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Landing Page</title>
-    <link rel="stylesheet" href="SRC/CSS/about.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <script type="module" src="JS/idioma.js"></script>
 </head>
 <body>
     <!-- MI HEADER -- ENCABEZADO--> 
@@ -27,9 +28,11 @@
 
                     </label>
                     <ul class="main-menu">
-                        <li class="menu-item"><a href="index.html">Inicio</a></li>
-                        <li class="menu-item"><a href="contact.html">Contactenos</a></li>
-                        <li class="menu-item"><a href="about.html">Sobre Nosotros</a></li>
+                        <a href="javascript:void(0);" idioma="en" id="btn_en">EN</a>
+                        <a href="javascript:void(0);" idioma="es" id="btn_es">ES</a>
+                        <li class="menu-item"><a href="index.html" id="menu_1">Inicio</a></li>
+                        <li class="menu-item"><a href="contact.html" id="menu_2">Contactenos</a></li>
+                        <li class="menu-item"><a href="about.html" id="menu_3">Sobre Nosotros</a></li>
                         <li class="menu-item"><a id="nav-main-contact" href="https://web.whatsapp.com/">Whatsapp</a></li>
                     </ul>
                 </nav>
@@ -40,21 +43,21 @@
     <main>
         <section class="about-container">
             <div class="about-content">
-                <h1>Sobre Nosotros</h1>
-                <p>En <strong>Prime Burguer</strong>, nos apasiona ofrecer una experiencia gastronómica única. Fundado en 2024, nuestro restaurante se ha convertido en el lugar de referencia para los amantes de las comidas rápidas en Medellín.</p>
+                <h1 id="menu_3">Sobre Nosotros</h1>
+                <p id="about_2">En <strong>Prime Burguer</strong>, nos apasiona ofrecer una experiencia gastronómica única. Fundado en 2024, nuestro restaurante se ha convertido en el lugar de referencia para los amantes de las comidas rápidas en Medellín.</p>
                 <div class="about-details">
-                    <h2>Nuestra Historia</h2>
-                    <p>Prime Burguer nació del amor por la cocina rápida de calidad. Nuestra misión es servir comida deliciosa con ingredientes frescos y un servicio amigable. Cada plato es preparado con cuidado y dedicación para asegurar que nuestros clientes tengan una experiencia memorable.</p>
+                    <h2 id="about_3">Nuestra Historia</h2>
+                    <p id="about_4">Prime Burguer nació del amor por la cocina rápida de calidad. Nuestra misión es servir comida deliciosa con ingredientes frescos y un servicio amigable. Cada plato es preparado con cuidado y dedicación para asegurar que nuestros clientes tengan una experiencia memorable.</p>
                     
-                    <h2>Visión y Misión</h2>
-                    <p><strong>Visión:</strong> Convertirnos en la cadena de restaurantes de comida rápida más apreciada en la región, conocida por su calidad y servicio.</p>
-                    <p><strong>Misión:</strong> Ofrecer comidas rápidas de alta calidad que superen las expectativas de nuestros clientes, creando un ambiente acogedor y amigable.</p>
+                    <h2 id="about_5">Visión y Misión</h2>
+                    <p id="about_7"><strong>Visión:</strong> Convertirnos en la cadena de restaurantes de comida rápida más apreciada en la región, conocida por su calidad y servicio.</p>
+                    <p id="about_9"><strong>Misión:</strong> Ofrecer comidas rápidas de alta calidad que superen las expectativas de nuestros clientes, creando un ambiente acogedor y amigable.</p>
 
-                    <h2>¿Por Qué Elegirnos?</h2>
+                    <h2 id="about_10">¿Por Qué Elegirnos?</h2>
                     <ul>
-                        <li>Ingredientes frescos y locales.</li>
-                        <li>Recetas únicas que combinan tradición y modernidad.</li>
-                        <li>Un equipo dedicado y apasionado por la comida.</li>
+                        <li id="about_11">Ingredientes frescos y locales.</li>
+                        <li id="about_12">Recetas únicas que combinan tradición y modernidad.</li>
+                        <li id="about_13">Un equipo dedicado y apasionado por la comida.</li>
                     </ul>
 
                     <div class="video-container">
@@ -67,10 +70,10 @@
 
    <!-- MI FOOTER O PIE DE PAGINA--> 
     <footer>
-        <p>&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
-        <p>Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
-        <p>Teléfono: +57 3157527899</p>
-        <p>Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
+        <p id="footer_1">&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
+        <p id="footer_2">Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
+        <p id="footer_3">Teléfono: +57 3157527899</p>
+        <p id="footer_4">Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
     </footer>
     <script src="JS/main.js"></script>
 </body>

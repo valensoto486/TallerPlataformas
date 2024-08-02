@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que la pag se adapte a cualquier dispositivo :) -->
     <meta name="description" content="Bienvenido a Comidas AV, tu destino para una experiencia gastronómica de comidas rápidas excepcionales.">
     <title>My Landing Page</title>
-    <link rel="stylesheet" href="SRC/CSS/contact.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <script type="module" src="JS/idioma.js"></script>
 </head>
 <body>
     <!-- MI HEADER -- ENCABEZADO--> 
@@ -28,9 +29,11 @@
 
                     </label>
                     <ul class="main-menu">
-                        <li class="menu-item"><a href="index.html">Inicio</a></li>
-                        <li class="menu-item"><a href="contact.html">Contactenos</a></li>
-                        <li class="menu-item"><a href="about.html">Sobre Nosotros</a></li>
+                        <a href="javascript:void(0);" idioma="en" id="btn_en">EN</a>
+                        <a href="javascript:void(0);" idioma="es" id="btn_es">ES</a>
+                        <li class="menu-item"><a href="index.html" id="menu_1">Inicio</a></li>
+                        <li class="menu-item"><a href="contact.html" id="menu_2">Contactenos</a></li>
+                        <li class="menu-item"><a href="about.html" id="menu_3">Sobre Nosotros</a></li>
                         <li class="menu-item"><a id="nav-main-contact" href="https://web.whatsapp.com/">Whatsapp</a></li>
                     </ul>
                 </nav>
@@ -44,40 +47,40 @@
             <!-- FORMULARIO DE CONTACTO--> 
             <div class="container-contact">
                 <form action="https://formspree.io/f/xeojglzo" method="post">
-                    <h1>Envíanos un Mensaje</h1>
-                    <label for="nombre">Nombre:</label>
+                    <h1 id="contactenos_1">Envíanos un Mensaje</h1>
+                    <label for="nombre" id="formulario_2">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="email">Correo Electrónico:</label>
+                    <label for="email" id="formulario_3">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="Mensaje:">Mensaje:</label>
+                    <label for="Mensaje:" id="contactenos_2">Mensaje:</label>
                     <input type="text" id="mensaje" name="mensaje" required>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="formulario_4">Enviar</button>
                 </form>
             </div>
 
             <div class="contact-details">
-                <h1>¡Contáctanos!</h1>
-                <p>Para consultas, reservas o cualquier comentario, por favor, utiliza los siguientes medios para ponerte en contacto con nosotros:</p>
+                <h1 id="contactenos_3">¡Contáctanos!</h1>
+                <p id="contactenos_4">Para consultas, reservas o cualquier comentario, por favor, utiliza los siguientes medios para ponerte en contacto con nosotros:</p>
                 
                 <div class="contact-item">
-                    <h2>Dirección</h2>
+                    <h2 id="contactenos_5">Dirección</h2>
                     <p>Transversal 38 #72-128, Medellin, Colombia</p>
                 </div>
                 <div class="contact-item">
-                    <h2>Teléfono</h2>
+                    <h2 id="contactenos_6">Teléfono</h2>
                     <p>+57 3157527899</p>
                 </div>
                 <div class="contact-item">
-                    <h2>Correo Electrónico</h2>
+                    <h2 id="formulario_3">Correo Electrónico</h2>
                     <p><a href="mailto:primeburguer@restaurante.com">primeburguer@gmail.com</a></p>
                 </div>
                 <div class="contact-item">
-                    <h2>Horarios</h2>
-                    <p>Lunes a Viernes: 11:00 - 22:00</p>
-                    <p>Sábado y Domingo: 12:00 - 23:00</p>
+                    <h2 id="contactenos_7">Horarios</h2>
+                    <p id="contactenos_8">Lunes a Viernes: 11:00 - 22:00</p>
+                    <p id="contactenos_9">Sábado y Domingo: 12:00 - 23:00</p>
                 </div>
             </div>
         </section>
@@ -85,10 +88,10 @@
 
    <!-- MI FOOTER O PIE DE PAGINA--> 
     <footer>
-        <p>&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
-        <p>Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
-        <p>Teléfono: +57 3157527899</p>
-        <p>Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
+        <p id="footer_1">&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
+        <p id="footer_2">Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
+        <p id="footer_3">Teléfono: +57 3157527899</p>
+        <p id="footer_4">Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>
     </footer>
     <script src="JS/contact.js"></script>
 </body>

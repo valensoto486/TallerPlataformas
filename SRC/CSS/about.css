@@ -4,6 +4,7 @@ html{
 body {
     margin: 0;
     padding: 0;
+    font-size: 1.5;
 }
 a{
     text-decoration: none;
@@ -81,8 +82,8 @@ ul.main-menu{
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    font-size: 1.2rem;
-    gap: 10px;
+    font-size: 1.1rem;
+    gap: 3px;
 }
    
 ul.main-menu #nav-main-contact{
@@ -139,13 +140,13 @@ input#check{
 }
 
 .about-content h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: rgb(114, 42, 9); 
 }
 
 .about-content p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     color: black;
     margin: 10px 0;
@@ -169,7 +170,7 @@ input#check{
 .about-details ul {
     list-style: none;
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: rgb(114, 42, 9);
 }
 

@@ -20,11 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (event) => {
         event.preventDefault(); // Evita el comportamiento por defecto del formulario
         
-        // Crear un objeto FormData a partir del formulario
         const formData = new FormData(form);
 
-        // Configuración de la solicitud Fetch para enviar los datos del formulario a Formspree
-        fetch('https://formspree.io/f/xldrbwnq', { // Reemplaza 'your-form-id' con tu ID de formulario de Formspree
+        fetch('https://formspree.io/f/xldrbwnq', { 
             method: 'POST',
             body: formData,
             headers: {
@@ -33,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => {
             if (response.ok) {
-                alert('¡Gracias por suscribirte!'); // Mensaje de éxito
+                alert('¡Gracias por suscribirte!'); // Mensaje de que funciono
                 form.reset(); // Limpiar el formulario
             } else {
                 alert('Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.'); // Mensaje de error

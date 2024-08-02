@@ -1,0 +1,420 @@
+html {
+  font-family: ADLaM Display;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.adlam-display-regular {
+  font-family: ADLaM Display, system-ui;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  background-color: #371b0b;
+  border-radius: 8px;
+  margin-top: 0;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+header.main-header {
+  z-index: 9999;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  top: 0;
+}
+
+.header-wrap {
+  z-index: 999;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.wrap-logo-header {
+  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.logo-header img {
+  width: 120px;
+  height: auto;
+}
+
+.logo-header {
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-header {
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-left: 80%;
+  display: flex;
+}
+
+.nav-wrap-header {
+  flex-basis: 50%;
+  display: flex;
+}
+
+ul.main-menu {
+  z-index: 99;
+  justify-content: space-between;
+  gap: 3px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+ul.main-menu #nav-main-contact {
+  color: #fff;
+  background-color: #62250f;
+  align-items: center;
+  padding: .5rem 1rem;
+  display: flex;
+}
+
+li.menu-item {
+  margin: .75rem .75rem .75rem 20px;
+  display: flex;
+}
+
+li.menu-item a {
+  color: #222;
+  padding: .5rem 1rem;
+}
+
+li.menu-item a:hover {
+  color: #ffc300;
+}
+
+i.toggle-menu {
+  z-index: 9999;
+  background-color: #fff;
+  border: none;
+  display: none;
+}
+
+i.toggle-menu img {
+  z-index: 99;
+  width: 27px;
+}
+
+input#check {
+  display: none;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+form {
+  color: #722a09;
+  background: #fffc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  position: absolute;
+  top: 85px;
+  right: 70px;
+  transform: translateY(0);
+  box-shadow: 0 0 10px #0003;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  display: block;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+form button {
+  color: #722a09;
+  cursor: pointer;
+  background-color: #fa0;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+form button:hover {
+  background-color: #e0a700;
+}
+
+.beneficios {
+  color: #ffffffe0;
+  z-index: 9999;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  top: 390px;
+  right: 55px;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-form button {
+  padding: 10px;
+}
+
+.banner-carousel {
+  border: 2px solid #ddd5;
+  width: 500px;
+  height: 530px;
+  position: absolute;
+  top: 55%;
+  left: 40px;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.carousel-container {
+  transition: transform 1s ease-in-out;
+  display: flex;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+}
+
+.gallery a {
+  border-radius: 10px;
+  transition: transform .3s, box-shadow .3s;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.gallery a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #00000026;
+}
+
+.gallery img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-container {
+  background-color: #000;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (width >= 880px) {
+  .header-wrap {
+    padding: .5rem 5rem;
+  }
+}
+
+@media (width <= 768px) {
+  header {
+    margin-bottom: 4rem;
+  }
+
+  .header-wrap {
+    z-index: 9999;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+  }
+
+  .wrap-logo-header {
+    z-index: 999;
+    position: fixed;
+    top: 5%;
+    left: 3%;
+  }
+
+  i.toggle-menu {
+    display: flex;
+  }
+
+  ul.main-menu, #nav-main-contact {
+    margin: 0;
+    padding: 0;
+    display: none;
+    left: 0;
+  }
+
+  ul.main-menu {
+    z-index: 10000;
+    background-color: #fff;
+    position: fixed;
+  }
+
+  label.checkbtn {
+    z-index: 9999;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+  }
+
+  #check:checked ~ ul {
+    z-index: 9;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    top: 0;
+  }
+
+  .beneficios {
+    color: #fff;
+    z-index: 1;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 350px;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    top: 360px;
+    right: 0;
+  }
+
+  form {
+    color: #722a09;
+    transform: translateY(50% - 10px);
+    background: #fffc;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    box-shadow: 0 0 10px #0003;
+  }
+
+  .contact-form {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .banner-carousel {
+    border: 2px solid #ddd5;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+}
+
+@media (width <= 480px) {
+  .beneficios {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=index.77644b97.css.map */
