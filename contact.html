@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que la pag se adapte a cualquier dispositivo :) -->
     <meta name="description" content="Bienvenido a Comidas AV, tu destino para una experiencia gastronómica de comidas rápidas excepcionales.">
     <title>My Landing Page</title>
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="SRC/CSS/contact.css">
 </head>
 <body>
     <!-- MI HEADER -- ENCABEZADO--> 
     <header class="main-header">
         <div class="header-wrap">
             <div class="wrap-logo-header">
-                <a href="/" class="logo-header">
-                    Comidas<span>Rapidas</span><span>AV</span>
+                <a href="#" class="logo-header">
+                    <img src="https://i.postimg.cc/g2hX0qK3/Whats-App-Image-2024-07-30-at-9-09-32-AM.jpg" alt="Logo">
+                    
                 </a>
             </div>
             
@@ -27,32 +28,64 @@
 
                     </label>
                     <ul class="main-menu">
-                        <li class="menu-item"><a href="index.html">Inicio</a></li>
+                        <li class="menu-item"><a href="SRC/index.html">Inicio</a></li>
                         <li class="menu-item"><a href="contact.html">Contactenos</a></li>
                         <li class="menu-item"><a href="about.html">Sobre Nosotros</a></li>
-                        <li class="menu-item"><a id="nav-main-contact" href="/">Whatsapp</a></li>
+                        <li class="menu-item"><a id="nav-main-contact" href="https://web.whatsapp.com/">Whatsapp</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <div class="hero"></div>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+
+    <main>
+        <section class="container-info">
+            <!-- FORMULARIO DE CONTACTO--> 
+            <div class="container-contact">
+                <form action="/enviar" method="post">
+                    <h1>Envíanos un Mensaje</h1>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="Mensaje:">Mensaje:</label>
+                    <input type="text" id="mensaje" name="mensaje" required>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="contact-details">
+                <h1>¡Contáctanos!</h1>
+                <p>Para consultas, reservas o cualquier comentario, por favor, utiliza los siguientes medios para ponerte en contacto con nosotros:</p>
+                
+                <div class="contact-item">
+                    <h2>Dirección</h2>
+                    <p>Transversal 38 #72-128, Medellin, Colombia</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Teléfono</h2>
+                    <p>+57 3157527899</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Correo Electrónico</h2>
+                    <p><a href="mailto:primeburguer@restaurante.com">primeburguer@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h2>Horarios</h2>
+                    <p>Lunes a Viernes: 11:00 - 22:00</p>
+                    <p>Sábado y Domingo: 12:00 - 23:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
    <!-- MI FOOTER O PIE DE PAGINA--> 
     <footer>
-        <p>&copy; 2024 Comidas AV. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
         <p>Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
         <p>Teléfono: +57 3157527899</p>
         <p>Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>

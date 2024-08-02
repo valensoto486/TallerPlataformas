@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Landing Page</title>
         <link rel="stylesheet" href="CSS/main.css">
-    </head>
+      </head>
     <body>
         <!-- MI HEADER -- ENCABEZADO--> 
         <header class="main-header">
@@ -14,7 +14,6 @@
                 <div class="wrap-logo-header">
                     <a href="#" class="logo-header">
                         <img src="https://i.postimg.cc/g2hX0qK3/Whats-App-Image-2024-07-30-at-9-09-32-AM.jpg" alt="Logo">
-                        
                     </a>
                 </div>
                 
@@ -29,51 +28,53 @@
                         </label>
                         <ul class="main-menu">
                             <li class="menu-item"><a href="index.html">Inicio</a></li>
-                            <li class="menu-item"><a href="contact.html">Contactenos</a></li>
-                            <li class="menu-item"><a href="about.html">Sobre Nosotros</a></li>
+                            <li class="menu-item"><a href="../contact.html">Contactenos</a></li>
+                            <li class="menu-item"><a href="../about.html">Sobre Nosotros</a></li>
                             <li class="menu-item"><a id="nav-main-contact" href="https://web.whatsapp.com/">Whatsapp</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-        <div class=""container">
-            <form action="/enviar" method="post">
-                <h1>Recibe Descuentos</h1>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <div class="hero">
+            <!-- FORMULARIO DESCUENTOS -->
+            <div class="container">
+                <form action="/enviar" method="post">
+                    <h1>Recibe Descuentos</h1>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="beneficios">
-                <h1>¡NO TE PIERDAS LA FIESTA DEL AHORRO!</h1>
-                <d1> Recibe mensajes con nuestros imperdibles descuentos, obten tu pase VIP para ahorrar y disfrutar mas.</d1>
-            </div>
-            
-            <!-- ROTADOR DE BANNERS -->
-            <div class="banner-carousel">
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="https://i.postimg.cc/85GNyWzp/Whats-App-Image-2024-07-31-at-10-24-04-PM.jpg" alt="Banner 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://i.postimg.cc/50pdnRrg/Whats-App-Image-2024-07-31-at-10-26-06-PM.jpg" alt="Banner 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://i.postimg.cc/nrP8tQpQ/Whats-App-Image-2024-07-31-at-10-26-30-PM.jpg" alt="Banner 3">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://i.postimg.cc/v8qwnCfH/Whats-App-Image-2024-07-31-at-10-39-34-PM.jpg" alt="Banner 4">
-                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="beneficios">
+                    <h1>¡NO TE PIERDAS LA FIESTA DEL AHORRO!</h1>
+                    <d1> Recibe mensajes con nuestros imperdibles descuentos, obten tu pase VIP para ahorrar y disfrutar mas.</d1>
                 </div>
-                <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+                
+                <!-- ROTADOR DE BANNERS -->
+                <div class="banner-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="https://i.postimg.cc/85GNyWzp/Whats-App-Image-2024-07-31-at-10-24-04-PM.jpg" alt="Banner 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.postimg.cc/50pdnRrg/Whats-App-Image-2024-07-31-at-10-26-06-PM.jpg" alt="Banner 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.postimg.cc/nrP8tQpQ/Whats-App-Image-2024-07-31-at-10-26-30-PM.jpg" alt="Banner 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.postimg.cc/v8qwnCfH/Whats-App-Image-2024-07-31-at-10-39-34-PM.jpg" alt="Banner 4">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
             </div>
         </div>
-        <div class="hero"></div>
 
         <div class="gallery">
             <a href="https://i.postimg.cc/ZqdDWMZn/Whats-App-Image-2024-08-01-at-12-28-32-AM.jpg" data-lightbox="my-gallery" data-title="Imagen 1">
@@ -96,16 +97,11 @@
             </a>
 
         </div>
-
-        <!-- VIDEO DE YOUTUBE -->
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HS24PywYlxg?si=vr65ATFbLzYvIiJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     
         <footer>
-            <p>&copy; 2024 Comidas Prime Burguer. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Prime Burguer. Todos los derechos reservados.</p>
             <p>Dirección: Transversal 38 #72-128, Medellin, Colombia</p>
             <p>Teléfono: +57 3157527899</p>
             <p>Síguenos en <a href="https://facebook.com">Facebook</a>, <a href="https://instagram.com">Instagram</a></p>

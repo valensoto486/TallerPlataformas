@@ -1,5 +1,5 @@
 html{
-    font-family: system-ui;
+    font-family: "ADLaM Display";
 }
 body {
     margin: 0;
@@ -12,32 +12,46 @@ li{
     list-style: none;
 }
 
-.hero{
-    background-color: white;
-    height: 100vh;
+
+.adlam-display-regular {
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Menu Header Restaurante */
+/* Menu Header */
  
 header.main-header{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
 }
+
    
 .header-wrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: #fff;
     z-index: 999;
 }
    
 .wrap-logo-header{
-    display: flex;
-    align-items: center;
-    flex-basis: 15%;
+    position:absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    flex-shrink: 0;
+}
+
+.logo-header img {
+    width: 120px; 
+    height: auto; 
 }
    
 .logo-header{
@@ -48,8 +62,11 @@ header.main-header{
    
 .nav-header{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
+    flex-grow: 1;
+    padding-left: 80%;
 }
    
 .nav-wrap-header{
@@ -64,20 +81,23 @@ ul.main-menu{
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    gap: 10px;
 }
    
 ul.main-menu #nav-main-contact{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    background-color: green;
+    background-color: rgb(98, 37, 15);
     color: #fff;
+    
 }
    
 li.menu-item{
     margin: .75rem;
     display: flex;
+    margin-left: 20px;
 }
    
 li.menu-item a{
@@ -100,9 +120,64 @@ i.toggle-menu img{
     width: 27px;
     z-index: 99;
 }
+
    
 input#check{
     display: none;
+}
+
+
+/* INFORMACION*/
+.about-container {
+    padding: 80px 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(114, 42, 9); 
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    margin: 10px 0;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.about-details h2 {
+    font-size: 2rem;
+    color: rgb(114, 42, 9); 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: rgb(114, 42, 9);
+}
+
+.about-details ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 
@@ -129,7 +204,7 @@ input#check{
     .wrap-logo-header{
         position: fixed;
         z-index: 999;
-        top: 3%;
+        top: 5%;
         left: 3%;
     }
     i.toggle-menu{
@@ -144,6 +219,7 @@ input#check{
     ul.main-menu{
         position: fixed;
         background-color: #fff;
+        z-index: 10000;
     }
     label.checkbtn{
         position: fixed;
@@ -161,4 +237,17 @@ input#check{
         top: 0;
         font-size: 2rem;
     }
+
+    .about-container {
+        padding: 40px 10px;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-details h2 {
+        font-size: 1.5rem;
+    }
+
 }
