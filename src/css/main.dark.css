@@ -1,19 +1,21 @@
 :root{
-    --color1: #ffffff;
-    --color2: #222;
-    --color3: #62250f;
-    --color4: #FFC300;
-    --color5: #ffffffcc;
-    --color6: #722a09;
-    --color7: #00000033;
-    --color8: #ddd;
-    --color9: #ffaa00;
-    --color10: #e0a700;
-    --color11: #8b361f;
-    --color12: #0000001a;
-    --color13: #ddd;
-}
+    --color1: #000;
+    --color2: #000000;
+    --color3: #ffe100;
+    --color4: #ffe100;
+    --color5: #f7ff05;
+    --color6: #ffe100;
+    --color7: #f7ff0532;
+    --color8: #ffe100;
+    --color9: #000000;
+    --color10: #ecf45a;
+    --color11: #ffe100;
+    --color12: #d22929a3;
+    --color13: #000;
+    --color14: #25252528;
+    --color15: #13131337;
 
+}
 html{
     font-family: "ADLaM Display";
 }
@@ -27,16 +29,20 @@ a{
 li{
     list-style: none;
 }
-
-.hero{
-    background-color: var(--color1);
-    height: 100vh;
-}
-
 .adlam-display-regular {
     font-family: "ADLaM Display", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+  
+.hero{
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    padding: 30px 20px; 
+    margin-top: 0; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--color7);
 }
 
 /* Menu Header */
@@ -57,7 +63,7 @@ header.main-header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--color1);
+    background-color: var(--color2);
     z-index: 999;
 }
    
@@ -77,7 +83,7 @@ header.main-header{
 .logo-header{
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--color2);
+    color: var(--color3);
 }
    
 .nav-header{
@@ -102,15 +108,15 @@ ul.main-menu{
     padding: 0;
     justify-content: space-between;
     font-size: 1.1rem;
-    gap: 3px;;
+    gap: 3px;
 }
    
 ul.main-menu #nav-main-contact{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    background-color: var(--color3);
-    color: var(--color1)
+    background-color: var(--color4);
+    color: var(--color2);
     
 }
    
@@ -122,16 +128,16 @@ li.menu-item{
    
 li.menu-item a{
     padding: .5rem 1rem;
-    color: var(--color2);
+    color: var(--color3);
 }
    
 li.menu-item a:hover{
-    color: var(--color4);
+    color: var(--color6);
 }
    
 i.toggle-menu{
     display: none;
-    background-color: var(--color1);
+    background-color: var(--color2);
     border: none;
     z-index: 9999;
 }
@@ -145,7 +151,6 @@ input#check{
     display: none;
 }
 
-
 .container{
     position: relative;
     height: 100vh;
@@ -154,14 +159,15 @@ input#check{
 form{
     position: absolute;
     top: 85px;
-    right: 20px; 
+    right: 70px; 
     width: 100%;
     max-width: 450px; 
     padding: 20px;
-    background: var(--color5); 
-    color: var(--color6);
+    background: var(--color8); 
+    color: var(--color9);
     border-radius: 8px;
-    box-shadow: 0 o 10px var(--color7);
+    box-shadow: 0 0 10px var(--color5);
+    transform: translateY(0);
 }
 
 form label {
@@ -176,46 +182,44 @@ form textarea {
     width: 100%;
     padding: 10px 10px;
     margin-bottom: 15px;
-    border: 1px solid var(--color8);
-    border-radius: 8px;
+    border: 1px solid var(--color10);
+    border-radius: 4px;
 }
 
 form button {
     padding: 10px 20px;
-    background-color: var(--color9) ;  
+    background-color: var(--color6); 
     border: none;
     border-radius: 7px;
-    color: var(--color6);
+    color: var(--color9);
     cursor: pointer;
     width:100%;
 }
 
 form button:hover {
-    background-color: var(--color10); 
+    background-color: var(--color6); 
 }
 
-.contact-details{
+.beneficios{
     position: absolute;
-    top: 50px;
-    right: 50%; 
+    top: 390px;
+    right: 55px; 
     width: 100%;
     max-width: 480px;
-    color: var(--color11);
+    color: var(--color8);
     padding: 10px;
     border-radius: 5px;
     z-index: 9999;
     height: auto; 
-    margin-bottom: 80px;
 }
-
 
 .contact-form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: var(--color1);
+    background: var(--color2);
     border-radius: 5px;
-    box-shadow: 0 0 10px var(--color12);
+    box-shadow: 0 0 10px var(--color7);
 }
 
 .contact-form label {
@@ -227,9 +231,9 @@ form button:hover {
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
-    padding: 10px ;
+    padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid var(--color13);
+    border: 1px solid var(--color10);
     border-radius: 4px;
 }
 
@@ -237,11 +241,93 @@ form button:hover {
     padding: 10px
 }
 
+/* ROTADOR DE BANNERS */
+.banner-carousel {
+    position: absolute;
+    top: 55%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 500px; 
+    height: 530px; 
+    overflow: hidden;
+    border: 2px solid var(--color11); 
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*GALERIA -> IMG DEL LUGAR COMO TAL */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px var(--color12);
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* VIDEO DE YOUTUBE */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción de 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color7);
+    background-color: var(--color13);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 @media (min-width:880px){
     .header-wrap{
       padding: .5rem 5rem;
     }
+    
 }
    
 @media (max-width:768px){
@@ -252,7 +338,7 @@ form button:hover {
     .header-wrap{
         position: fixed;
         width: 100%;
-        background-color: var(--color1);
+        background-color: var(--color2);
         padding: 0;
         top: 0;
         z-index: 9999;
@@ -275,7 +361,7 @@ form button:hover {
     }
     ul.main-menu{
         position: fixed;
-        background-color: var(--color1);
+        background-color: var(--color2);
         z-index: 10000;
     }
     label.checkbtn{
@@ -295,63 +381,60 @@ form button:hover {
         font-size: 2rem;
     }
 
-    form{
+    .beneficios{
         position: absolute;
-        right: 40px;
-        margin-top: 100px;
-        width: 90%;
-        max-width: 450px; 
-        top: 0;
-        padding: 20px;
-        background: var(--color5); 
-        color: var(--color6);
-        border-radius: 8px;
-        box-shadow: 0 0 10px var(--color7);
-        transform: translateY(0);
-        margin-bottom: 10px;
-    }
-    
-    form label {
-        display: block;
-        margin-bottom: 8px; 
-        font-weight: bold;
-    }
-    
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-        width: 100%;
-        padding: 10px 10px;
-        margin-bottom: 15px;
-        border: 1px solid var(--color8);
-        border-radius: 4px;
-    }
-    
-    form button {
-        padding: 10px 20px;
-        background-color: var(--color9); 
-        border: none;
-        border-radius: 7px;
-        color: var(--color6);
-        cursor: pointer;
-        width:100%;
-    }
-    
-    form button:hover {
-        background-color: var(--color10); 
-    }
-
-    .contact-details{
-        position: static;
-        top: 300px;
-        width: 90%;
-        max-width: 480px;
-        color: var(--color11);
+        top: 360px;
+        right: 0; 
+        width: 50%;
+        max-width: 350px;
+        color: var(--color2);
         padding: 10px;
         border-radius: 5px;
-        z-index: -1;
-        height: auto; 
-        margin: 0 auto;
-        margin-bottom: 40px;
+        z-index: 1;
+        height: auto;
+    }
+    form{
+        position: absolute;
+        top: 70px;
+        right: 10px; 
+        width: 50%;
+        max-width: 300px; 
+        padding: 20px;
+        background: var(--color8); 
+        color: var(--color14);
+        border-radius: 8px;
+        box-shadow: 0 0 10px var(--color15);
+        transform: translateY(50% - 10px);
+    }
+    .contact-form {
+        padding: 10px;
+        margin: 10px;
+    }
+    .banner-carousel {
+        position: absolute;
+        top: 55%;
+        left: 15px;
+        transform: translateY(-50%);
+        width: 300px; 
+        height: 400px; 
+        overflow: hidden;
+        border: 2px solid var(--color11); 
+    }
+
+}
+
+@media (max-width: 480px) {
+    .beneficios {
+        font-size: 14px; 
+        max-width: 100%;
+    }
+
+    form {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 15px;
     }
 }

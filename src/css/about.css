@@ -1,3 +1,15 @@
+:root{
+    --color1: #fff;
+    --color2: #222;
+    --color3: #62250f;
+    --color4: #FFC300;
+    --color5: #0000001a;
+    --color6: #722a09;
+    --color7: #000000;
+    --color8: #ddd;
+
+}
+
 html{
     font-family: "ADLaM Display";
 }
@@ -38,7 +50,7 @@ header.main-header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #fff;
+    background-color: var(--color1);
     z-index: 999;
 }
    
@@ -58,7 +70,7 @@ header.main-header{
 .logo-header{
     font-weight: bold;
     font-size: 1.2rem;
-    color: #222;
+    color: var(--color2);
 }
    
 .nav-header{
@@ -90,8 +102,8 @@ ul.main-menu #nav-main-contact{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    background-color: rgb(98, 37, 15);
-    color: #fff;
+    background-color: var(--color3);
+    color: var(--color1);
     
 }
    
@@ -103,16 +115,16 @@ li.menu-item{
    
 li.menu-item a{
     padding: .5rem 1rem;
-    color: #222;
+    color: var(--color2);
 }
    
 li.menu-item a:hover{
-    color: #FFC300;
+    color: var(--color4);
 }
    
 i.toggle-menu{
     display: none;
-    background-color: #fff;
+    background-color: var(--color1);
     border: none;
     z-index: 9999;
 }
@@ -133,22 +145,22 @@ input#check{
     padding: 80px 20px; 
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--color1);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--color5);
     text-align: center;
 }
 
 .about-content h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: rgb(114, 42, 9); 
+    color: var(--color6); 
 }
 
 .about-content p {
     font-size: 1.5rem;
     line-height: 1.6;
-    color: black;
+    color: var(--color7);
     margin: 10px 0;
 }
 
@@ -162,7 +174,7 @@ input#check{
 
 .about-details h2 {
     font-size: 2rem;
-    color: rgb(114, 42, 9); 
+    color: var(--color6); 
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -171,13 +183,13 @@ input#check{
     list-style: none;
     padding: 0;
     font-size: 1.5rem;
-    color: rgb(114, 42, 9);
+    color: var(--color6);
 }
 
 .about-details ul li {
     margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color8);
     border-radius: 5px;
 }
 
@@ -196,7 +208,7 @@ input#check{
     .header-wrap{
         position: fixed;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--color1);
         padding: 0;
         top: 0;
         z-index: 9999;
@@ -219,7 +231,7 @@ input#check{
     }
     ul.main-menu{
         position: fixed;
-        background-color: #fff;
+        background-color: var(--color1);
         z-index: 10000;
     }
     label.checkbtn{
