@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel SRC/index.html",
     "build": "parcel build SRC/index.html",
-    "servidor": "http-server -c-1"
+    "servidor": "http-server -c-1",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "repository": {
     "type": "git",
