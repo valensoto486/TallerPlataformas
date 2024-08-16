@@ -1,20 +1,22 @@
 import { terser } from "rollup-plugin-terser";
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import postcss from 'rollup-plugin-postcss';
+import less from 'rollup-plugin-less';
 import image from '@rollup/plugin-image';
 import url from 'rollup-plugin-url';
 
 export default {
   input: 'src/js/main.js',
   output: {
-    file: 'dist/bundle.js',
+    file: 'dist/bundle.js', //Genera mi archivo bundle :)
     format: 'iife',
     sourcemap: true
   },
   plugins: [
-    postcss({
-      extract: 'dist/styles.css',
+    less({
+        output: 'dist/styles.css', //Genera un archivo css
+        compress: true, //Para Minimizar el CSS
+        sourceMap: true, // Generar mapa de origen para el CSS
     }),
     resolve(),
     commonjs(),
