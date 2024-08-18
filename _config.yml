@@ -2,10 +2,10 @@
 title: Mi Sitio Jekyll
 description: Este es un sitio de ejemplo utilizando Jekyll.
 baseurl: "" 
-url: "http://example.com" # Cambia esto por la URL de tu sitio
+url: "https://valensoto486.github.io/TallerPlataformas/" 
 
 # Configuración de temas
 theme: minima
 
-# Otros ajustes (opcional)
+# Otros ajustes 
 markdown: kramdown
