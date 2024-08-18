@@ -1,0 +1,11 @@
+# _config.yml
+title: Mi Sitio Jekyll
+description: Este es un sitio de ejemplo utilizando Jekyll.
+baseurl: "" 
+url: "http://example.com" # Cambia esto por la URL de tu sitio
+
+# Configuración de temas
+theme: minima
+
+# Otros ajustes (opcional)
+markdown: kramdown
