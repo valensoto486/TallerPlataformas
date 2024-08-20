@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentTheme) {
         themeLink.setAttribute('href', currentTheme);
     } else {
-        themeLink.setAttribute('href', 'css/main.css'); // Establece el light mode por defecto
+        themeLink.setAttribute('href', 'css/about.css'); // Establece el light mode por defecto
     }
 
     darkModeToggle.addEventListener('click', () => {
         const currentTheme = themeLink.getAttribute('href');
-        const newTheme = currentTheme === 'css/main.css' ? 'css/main.dark.css' : 'css/main.css';
+        const newTheme = currentTheme === 'css/about.css' ? 'css/about.dark.css' : 'css/about.css';
         themeLink.setAttribute('href', newTheme);
         localStorage.setItem('theme', newTheme); // Guarda el tema seleccionado en localStorage
     });
