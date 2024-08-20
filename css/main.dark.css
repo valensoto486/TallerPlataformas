@@ -1,4 +1,4 @@
-:root{
+:root {
     --color1: #000;
     --color2: #000000;
     --color3: #ffe100;
@@ -16,39 +16,44 @@
     --color15: #13131337;
 
 }
-html{
+
+html {
     font-family: "ADLaM Display";
     background-color: var(--color13);
 }
+
 body {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
+
 .adlam-display-regular {
     font-family: "ADLaM Display", system-ui;
     font-weight: 400;
     font-style: normal;
 }
-  
-.hero{
+
+.hero {
     background-color: var(--color1);
     color: var(--color2);
     text-align: center;
-    padding: 30px 20px; 
-    margin-top: 0; 
+    padding: 30px 20px;
+    margin-top: 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--color7);
 }
 
 /* Menu Header */
- 
-header.main-header{
+
+header.main-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -58,8 +63,8 @@ header.main-header{
     align-items: center;
 }
 
-   
-.header-wrap{
+
+.header-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,9 +72,9 @@ header.main-header{
     background-color: var(--color2);
     z-index: 999;
 }
-   
-.wrap-logo-header{
-    position:absolute;
+
+.wrap-logo-header {
+    position: absolute;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
@@ -77,31 +82,31 @@ header.main-header{
 }
 
 .logo-header img {
-    width: 120px; 
-    height: auto; 
+    width: 120px;
+    height: auto;
 }
-   
-.logo-header{
+
+.logo-header {
     font-weight: bold;
     font-size: 1.2rem;
     color: var(--color3);
 }
-   
-.nav-header{
+
+.nav-header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     flex-grow: 1;
-    padding-left: 80%;
+    padding-left: 76%;
 }
-   
-.nav-wrap-header{
+
+.nav-wrap-header {
     display: flex;
     flex-basis: 50%;
 }
-   
-ul.main-menu{
+
+ul.main-menu {
     display: flex;
     width: 100%;
     z-index: 99;
@@ -109,63 +114,68 @@ ul.main-menu{
     padding: 0;
     justify-content: space-between;
     font-size: 1.1rem;
-    gap: 3px;
+    gap: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
-   
-ul.main-menu #nav-main-contact{
+
+ul.main-menu #nav-main-contact {
     display: flex;
     align-items: center;
-    padding: .5rem 1rem;
+    padding: .9rem 1rem;
     background-color: var(--color4);
     color: var(--color2);
-    
+
 }
-   
-li.menu-item{
-    margin: .75rem;
+
+li.menu-item {
+    margin: 0;
     display: flex;
-    margin-left: 20px;
 }
-   
-li.menu-item a{
-    padding: .5rem 1rem;
+
+li.menu-item a {
+    padding: .9rem 1rem;
     color: var(--color3);
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
-   
-li.menu-item a:hover{
+
+li.menu-item a:hover {
     color: var(--color6);
 }
-   
-i.toggle-menu{
+
+i.toggle-menu {
     display: none;
     background-color: var(--color2);
     border: none;
     z-index: 9999;
 }
-   
-i.toggle-menu img{
+
+i.toggle-menu img {
     width: 27px;
     filter: invert(75%) sepia(100%) saturate(500%) hue-rotate(-30deg) brightness(100%) contrast(100%);
     z-index: 99;
 }
-   
-input#check{
+
+input#check {
     display: none;
 }
 
-.container{
+.container {
     position: relative;
     height: 100vh;
 }
 
-form{
+form {
     position: absolute;
     top: 85px;
-    right: 70px; 
+    right: 70px;
     width: 100%;
-    max-width: 450px; 
+    max-width: 450px;
     padding: 20px;
-    background: var(--color8); 
+    background: var(--color8);
     color: var(--color9);
     border-radius: 8px;
     box-shadow: 0 0 10px var(--color5);
@@ -174,7 +184,7 @@ form{
 
 form label {
     display: block;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
@@ -190,29 +200,29 @@ form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: var(--color6); 
+    background-color: var(--color6);
     border: none;
     border-radius: 7px;
     color: var(--color9);
     cursor: pointer;
-    width:100%;
+    width: 100%;
 }
 
 form button:hover {
-    background-color: var(--color6); 
+    background-color: var(--color6);
 }
 
-.beneficios{
+.beneficios {
     position: absolute;
     top: 390px;
-    right: 55px; 
+    right: 55px;
     width: 100%;
     max-width: 480px;
     color: var(--color8);
     padding: 10px;
     border-radius: 5px;
     z-index: 9999;
-    height: auto; 
+    height: auto;
 }
 
 .contact-form {
@@ -249,10 +259,10 @@ form button:hover {
     top: 55%;
     left: 40px;
     transform: translateY(-50%);
-    width: 500px; 
-    height: 530px; 
+    width: 500px;
+    height: 530px;
     overflow: hidden;
-    border: 2px solid var(--color11); 
+    border: 2px solid var(--color11);
 }
 
 .carousel-container {
@@ -312,13 +322,14 @@ form button:hover {
 }
 
 footer a {
-    color: #2f00ff; /* Cambia el color de los enlaces */
+    color: #2f00ff;
+    /* Cambia el color de los enlaces */
 }
 
 /* VIDEO DE YOUTUBE */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -335,19 +346,19 @@ footer a {
     height: 100%;
 }
 
-@media (min-width:880px){
-    .header-wrap{
-      padding: .5rem 5rem;
-    }
-    
-}
-   
-@media (max-width:768px){
-    header{
-      margin-bottom: 4rem;
+@media (min-width:880px) {
+    .header-wrap {
+        padding: .5rem 5rem;
     }
 
-    .header-wrap{
+}
+
+@media (max-width:768px) {
+    header {
+        margin-bottom: 4rem;
+    }
+
+    .header-wrap {
         position: fixed;
         width: 100%;
         background-color: var(--color2);
@@ -356,33 +367,40 @@ footer a {
         z-index: 9999;
         height: 60px;
     }
-    .wrap-logo-header{
+
+    .wrap-logo-header {
         position: fixed;
         z-index: 999;
         top: 5%;
         left: 3%;
     }
-    i.toggle-menu{
+
+    i.toggle-menu {
         display: flex;
     }
-    ul.main-menu,#nav-main-contact{
+
+    ul.main-menu,
+    #nav-main-contact {
         display: none;
         left: 0;
         margin: 0;
         padding: 0;
     }
-    ul.main-menu{
+
+    ul.main-menu {
         position: fixed;
         background-color: var(--color2);
         z-index: 10000;
     }
-    label.checkbtn{
+
+    label.checkbtn {
         position: fixed;
         right: 3%;
         top: 3%;
         z-index: 9999;
     }
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         display: flex;
         z-index: 9;
         flex-flow: column;
@@ -393,10 +411,10 @@ footer a {
         font-size: 2rem;
     }
 
-    .beneficios{
+    .beneficios {
         position: absolute;
         top: 360px;
-        right: 0; 
+        right: 0;
         width: 50%;
         max-width: 350px;
         color: var(--color3);
@@ -405,39 +423,42 @@ footer a {
         z-index: 1;
         height: auto;
     }
-    form{
+
+    form {
         position: absolute;
         top: 70px;
-        right: 10px; 
+        right: 10px;
         width: 50%;
-        max-width: 300px; 
+        max-width: 300px;
         padding: 20px;
-        background: var(--color8); 
+        background: var(--color8);
         color: var(--color1);
         border-radius: 8px;
         box-shadow: 0 0 10px var(--color15);
         transform: translateY(50% - 10px);
     }
+
     .contact-form {
         padding: 10px;
         margin: 10px;
     }
+
     .banner-carousel {
         position: absolute;
         top: 55%;
         left: 15px;
         transform: translateY(-50%);
-        width: 300px; 
-        height: 400px; 
+        width: 300px;
+        height: 400px;
         overflow: hidden;
-        border: 2px solid var(--color11); 
+        border: 2px solid var(--color11);
     }
 
 }
 
 @media (max-width: 480px) {
     .beneficios {
-        font-size: 14px; 
+        font-size: 14px;
         max-width: 100%;
     }
 
