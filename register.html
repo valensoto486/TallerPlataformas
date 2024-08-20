@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <form action="" id="formulario" novalidate>
+        <div class="field-group">
+            <div class="content-input-field">
+                <input name="nombre" id="nombre" type="text" placeholder="Ingrese el nombre" required>
+                <div class="invalid-feedback">Ingresa un nombre válido</div>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <div class="content-input-field">
+                <input name="correo" id="correo" type="email" placeholder="Ingrese el correo" required>
+                <div class="invalid-feedback">Ingresa un correo válido</div>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <div class="content-input-field">
+                <input name="celular" id="celular" type="tel" placeholder="Ingrese el celular" required
+                    pattern="3[0-9]{9}" title="El celular debe empezar con 3 y tener 10 dígitos">
+                <div class="invalid-feedback">Ingresa un celular válido</div>
+            </div>
+        </div>
+
+        <div class="field-group">
+            <div class="content-input-field">
+                <input name="clave" id="clave" type="password" placeholder="Ingrese la clave" required pattern=".{6,}"
+                    title="La clave debe tener mínimo 6 caracteres">
+                <div class="invalid-feedback">La clave debe tener al menos 6 caracteres</div>
+            </div>
+        </div>
+
+        <div class="content-input-field">
+            <button type="submit" id="btn_enviar" class="btn">Registrarse</button>
+        </div>
+
+        <div class="list-login-bottom text-center mt-lg-5 mt-4">
+            <a href="login.html">Ya tengo cuenta</a>
+        </div>
+    </form>
+
+    <script type="module" src="js/register.js"></script>
+</body>
+
+</html>
