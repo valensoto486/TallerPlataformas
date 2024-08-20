@@ -145,6 +145,7 @@ i.toggle-menu{
    
 i.toggle-menu img{
     width: 27px;
+    filter: invert(75%) sepia(100%) saturate(500%) hue-rotate(-30deg) brightness(100%) contrast(100%);
     z-index: 99;
 }
    
@@ -303,6 +304,16 @@ form button:hover {
     border-radius: 10px;
 }
 
+#footer_1,
+#footer_2,
+#footer_3,
+#footer_4 {
+    color: var(--color10);
+}
+
+footer a {
+    color: #2f00ff; /* Cambia el color de los enlaces */
+}
 
 /* VIDEO DE YOUTUBE */
 .video-container {

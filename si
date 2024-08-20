@@ -1,0 +1,24 @@
+[33m5991403[m[33m ([m[1;36mHEAD -> [m[1;32mprueba[m[33m, [m[1;31morigin/prueba[m[33m)[m cambios en el footer dark
+[33m8310c48[m Cambios en el main.dark.css
+[33m0aca11b[m Cambios en la carpeta _config.yml
+[33m959ddb3[m[33m ([m[1;32mmain[m[33m)[m Se movieron los archivos de src al root
+[33m931356b[m[33m ([m[1;31morigin/main[m[33m)[m Creacion archivos css para el darkmode
+[33m186ea90[m Integracion Bundle 2.0 CASI LISTO
+[33med5bf5b[m Inicio de configuracion de mi bundle roll up
+[33mfc73206[m Renombrar carpeta SRC a src
+[33md31e6d8[m Cambio de nombres a las carpetas
+[33mdc36df5[m Remove dist and node_modules from repository
+[33mdbbc714[m Copiar mi carpeta SRC a mi raiz prueba
+[33m36c7907[m Pagina web completa y ordenada
+[33m302cd38[m Envio de los formularios utilizando Formspree
+[33md212db6[m Cambios de diseño en about y contactenos
+[33m3dcf788[m Ajustes de video y galeria
+[33m1cca9af[m Creacion del rotador de Banners
+[33m13a68e9[m Diseño del formulario
+[33md7c7a91[m Diseño inicial pag.Inicio
+[33mb2b657c[m Diseño del Footer (puede mejorar)
+[33m158f37e[m Diseño del header y cambios en el inicio
+[33m10662fa[m Estructura base dividida por paginas
+[33m2092ae5[m Creacion base de mi CSS y JS
+[33m82852c2[m Version uno de mi pagina SIN INFORMACION
+[33mffc1648[m Prueba Funcionalidad de Git
