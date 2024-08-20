@@ -1,0 +1,84 @@
+:root {
+    --color1: #371b0b;
+    --color2: #ffffff;
+    --color3: #222;
+    --color4: #62250f;
+    --color5: #00000033;
+    --color6: #FFC300;
+    --color7: #0000001a;
+    --color8: #ffffffcc;
+    --color9: #722a09;
+    --color10: #ddd;
+    --color11: #dddddd55;
+    --color12: #00000026;
+    --color13: #000;
+    --color14: #722a09;
+    --color15: #00000033;
+    --color16: #000000;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color10);
+    height: 100vh;
+    margin: 0;
+}
+
+#formulario {
+    background: var(--color6);
+    border: 1px solid var(--color11);
+    border-radius: 10px;
+    padding: 40px;
+    width: 300px;
+}
+
+.field-group {
+    margin-bottom: 15px;
+}
+
+.content-input-field {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color10);
+}
+
+.invalid-feedback {
+    font-size: 12px;
+    color: var(--color1);
+    display: none;
+}
+
+input:invalid+.invalid-feedback {
+    display: block;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color14);
+    color: var(--color10);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color4);
+}
+
+.list-login-bottom a {
+    color: var(--color13);
+    text-decoration: none;
+}
+
+.list-login-bottom a:hover {
+    text-decoration: underline;
+}
