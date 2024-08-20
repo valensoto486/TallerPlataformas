@@ -1,4 +1,4 @@
-:root{
+:root {
     --color1: #ffffff;
     --color2: #222;
     --color3: #62250f;
@@ -14,21 +14,24 @@
     --color13: #ddd;
 }
 
-html{
+html {
     font-family: "ADLaM Display";
 }
+
 body {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
 
-.hero{
+.hero {
     background-color: var(--color1);
     height: 100vh;
 }
@@ -40,8 +43,8 @@ li{
 }
 
 /* Menu Header */
- 
-header.main-header{
+
+header.main-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -51,8 +54,8 @@ header.main-header{
     align-items: center;
 }
 
-   
-.header-wrap{
+
+.header-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,9 +63,9 @@ header.main-header{
     background-color: var(--color1);
     z-index: 999;
 }
-   
-.wrap-logo-header{
-    position:absolute;
+
+.wrap-logo-header {
+    position: absolute;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
@@ -70,31 +73,31 @@ header.main-header{
 }
 
 .logo-header img {
-    width: 120px; 
-    height: auto; 
+    width: 120px;
+    height: auto;
 }
-   
-.logo-header{
+
+.logo-header {
     font-weight: bold;
     font-size: 1.2rem;
     color: var(--color2);
 }
-   
-.nav-header{
+
+.nav-header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     flex-grow: 1;
-    padding-left: 80%;
+    padding-left: 76%;
 }
-   
-.nav-wrap-header{
+
+.nav-wrap-header {
     display: flex;
     flex-basis: 50%;
 }
-   
-ul.main-menu{
+
+ul.main-menu {
     display: flex;
     width: 100%;
     z-index: 99;
@@ -102,63 +105,63 @@ ul.main-menu{
     padding: 0;
     justify-content: space-between;
     font-size: 1.1rem;
-    gap: 3px;;
+    gap: 3px;
+    ;
 }
-   
-ul.main-menu #nav-main-contact{
+
+ul.main-menu #nav-main-contact {
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
     background-color: var(--color3);
     color: var(--color1)
-    
 }
-   
-li.menu-item{
+
+li.menu-item {
     margin: .75rem;
     display: flex;
     margin-left: 20px;
 }
-   
-li.menu-item a{
+
+li.menu-item a {
     padding: .5rem 1rem;
     color: var(--color2);
 }
-   
-li.menu-item a:hover{
+
+li.menu-item a:hover {
     color: var(--color4);
 }
-   
-i.toggle-menu{
+
+i.toggle-menu {
     display: none;
     background-color: var(--color1);
     border: none;
     z-index: 9999;
 }
-   
-i.toggle-menu img{
+
+i.toggle-menu img {
     width: 27px;
     z-index: 99;
 }
-   
-input#check{
+
+input#check {
     display: none;
 }
 
 
-.container{
+.container {
     position: relative;
     height: 100vh;
 }
 
-form{
+form {
     position: absolute;
     top: 85px;
-    right: 20px; 
+    right: 20px;
     width: 100%;
-    max-width: 450px; 
+    max-width: 450px;
     padding: 20px;
-    background: var(--color5); 
+    background: var(--color5);
     color: var(--color6);
     border-radius: 8px;
     box-shadow: 0 o 10px var(--color7);
@@ -166,7 +169,7 @@ form{
 
 form label {
     display: block;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
@@ -182,29 +185,29 @@ form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: var(--color9) ;  
+    background-color: var(--color9);
     border: none;
     border-radius: 7px;
     color: var(--color6);
     cursor: pointer;
-    width:100%;
+    width: 100%;
 }
 
 form button:hover {
-    background-color: var(--color10); 
+    background-color: var(--color10);
 }
 
-.contact-details{
+.contact-details {
     position: absolute;
     top: 50px;
-    right: 50%; 
+    right: 50%;
     width: 100%;
     max-width: 480px;
     color: var(--color11);
     padding: 10px;
     border-radius: 5px;
     z-index: 9999;
-    height: auto; 
+    height: auto;
     margin-bottom: 80px;
 }
 
@@ -227,7 +230,7 @@ form button:hover {
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
-    padding: 10px ;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--color13);
     border-radius: 4px;
@@ -238,18 +241,18 @@ form button:hover {
 }
 
 
-@media (min-width:880px){
-    .header-wrap{
-      padding: .5rem 5rem;
+@media (min-width:880px) {
+    .header-wrap {
+        padding: .5rem 5rem;
     }
 }
-   
-@media (max-width:768px){
-    header{
-      margin-bottom: 4rem;
+
+@media (max-width:768px) {
+    header {
+        margin-bottom: 4rem;
     }
 
-    .header-wrap{
+    .header-wrap {
         position: fixed;
         width: 100%;
         background-color: var(--color1);
@@ -258,33 +261,40 @@ form button:hover {
         z-index: 9999;
         height: 60px;
     }
-    .wrap-logo-header{
+
+    .wrap-logo-header {
         position: fixed;
         z-index: 999;
         top: 5%;
         left: 3%;
     }
-    i.toggle-menu{
+
+    i.toggle-menu {
         display: flex;
     }
-    ul.main-menu,#nav-main-contact{
+
+    ul.main-menu,
+    #nav-main-contact {
         display: none;
         left: 0;
         margin: 0;
         padding: 0;
     }
-    ul.main-menu{
+
+    ul.main-menu {
         position: fixed;
         background-color: var(--color1);
         z-index: 10000;
     }
-    label.checkbtn{
+
+    label.checkbtn {
         position: fixed;
         right: 3%;
         top: 3%;
         z-index: 9999;
     }
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         display: flex;
         z-index: 9;
         flex-flow: column;
@@ -295,28 +305,28 @@ form button:hover {
         font-size: 2rem;
     }
 
-    form{
+    form {
         position: absolute;
         right: 40px;
         margin-top: 100px;
         width: 90%;
-        max-width: 450px; 
+        max-width: 450px;
         top: 0;
         padding: 20px;
-        background: var(--color5); 
+        background: var(--color5);
         color: var(--color6);
         border-radius: 8px;
         box-shadow: 0 0 10px var(--color7);
         transform: translateY(0);
         margin-bottom: 10px;
     }
-    
+
     form label {
         display: block;
-        margin-bottom: 8px; 
+        margin-bottom: 8px;
         font-weight: bold;
     }
-    
+
     form input[type="text"],
     form input[type="email"],
     form textarea {
@@ -326,22 +336,22 @@ form button:hover {
         border: 1px solid var(--color8);
         border-radius: 4px;
     }
-    
+
     form button {
         padding: 10px 20px;
-        background-color: var(--color9); 
+        background-color: var(--color9);
         border: none;
         border-radius: 7px;
         color: var(--color6);
         cursor: pointer;
-        width:100%;
-    }
-    
-    form button:hover {
-        background-color: var(--color10); 
+        width: 100%;
     }
 
-    .contact-details{
+    form button:hover {
+        background-color: var(--color10);
+    }
+
+    .contact-details {
         position: static;
         top: 300px;
         width: 90%;
@@ -350,7 +360,7 @@ form button:hover {
         padding: 10px;
         border-radius: 5px;
         z-index: -1;
-        height: auto; 
+        height: auto;
         margin: 0 auto;
         margin-bottom: 40px;
     }
