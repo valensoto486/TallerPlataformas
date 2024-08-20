@@ -145,6 +145,7 @@ i.toggle-menu{
    
 i.toggle-menu img{
     width: 27px;
+    filter: invert(75%) sepia(100%) saturate(500%) hue-rotate(-30deg) brightness(100%) contrast(100%);
     z-index: 99;
 }
    
