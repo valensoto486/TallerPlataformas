@@ -303,6 +303,16 @@ form button:hover {
     border-radius: 10px;
 }
 
+#footer_1,
+#footer_2,
+#footer_3,
+#footer_4 {
+    color: var(--color10);
+}
+
+footer a {
+    color: #2f00ff; /* Cambia el color de los enlaces */
+}
 
 /* VIDEO DE YOUTUBE */
 .video-container {
