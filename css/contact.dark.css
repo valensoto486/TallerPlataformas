@@ -1,15 +1,15 @@
 :root {
-    --color1: #ffffff;
-    --color2: #222;
-    --color3: #62250f;
+    --color1: #000000;
+    --color2: #ffe100;
+    --color3: #ffe100;
     --color4: #FFC300;
-    --color5: #ffffffcc;
-    --color6: #722a09;
+    --color5: #ffe100;
+    --color6: #000000;
     --color7: #00000033;
-    --color8: #ddd;
-    --color9: #ffaa00;
+    --color8: #f0e6e692;
+    --color9: #ffe100;
     --color10: #e0a700;
-    --color11: #8b361f;
+    --color11: #ffe100;
     --color12: #0000001a;
     --color13: #ddd;
 }
@@ -21,6 +21,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: #000000;
 }
 
 a {
@@ -110,6 +111,7 @@ ul.main-menu {
     flex-wrap: wrap;
     box-sizing: border-box;
     list-style: none;
+    background-color: #000000;
 }
 
 li.menu-item.dark-mode-toggle {
@@ -268,6 +270,12 @@ form button:hover {
     padding: 10px
 }
 
+#footer_1,
+#footer_2,
+#footer_3,
+#footer_4 {
+    color: var(--color3);
+}
 
 @media (min-width:880px) {
     .header-wrap {
