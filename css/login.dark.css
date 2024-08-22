@@ -108,7 +108,8 @@ li.menu-item.dark-mode-toggle {
     width: 30px; /* Tamaño del ícono */
     height: auto;
     cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
-    transition: opacity 0.3s ease; /* Añade una transición suave al cambiar el modo */
+    transition: opacity 0.3s ease; 
+    filter: invert(1);
 }
 
 .dark-mode-icon:hover {
