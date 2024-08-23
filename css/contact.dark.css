@@ -401,3 +401,113 @@ form button:hover {
         margin-bottom: 40px;
     }
 }
+
+@media (max-width:1030px){
+    .hero {
+        max-height: 500px;
+    }
+    form {
+        position: center;
+        right: 200px;
+        margin-top: 120px;
+        width: 90%;
+        max-width: 600px;
+        top: 0;
+        padding: 20px;
+        border-radius: 8px;
+        transform: translateY(0);
+        margin-bottom: 10px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .contact-details {
+        font-size: 20px;
+        max-width: 100%;
+        position: static;
+        top: 400px;
+        width: 110%;
+        max-width: 480px;
+        padding: 80px;
+        border-radius: 5px;
+        z-index: -1;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px){
+    .hero {
+        max-height: 500px;
+    }
+    form {
+        position: center;
+        right: 40px;
+        margin-top: 120px;
+        width: 90%;
+        max-width: 270px;
+        top: 0;
+        padding: 20px;
+        border-radius: 8px;
+        transform: translateY(0);
+        margin-bottom: 10px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .contact-details {
+        position: static;
+        top: 300px;
+        width: 90%;
+        max-width: 480px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: -1;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}

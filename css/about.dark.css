@@ -307,3 +307,18 @@ input#check {
     }
 
 }
+
+@media (max-width: 480px){
+    .about-container {
+        padding: 90px 40px;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-details h2 {
+        font-size: 1.5rem;
+    }
+
+}

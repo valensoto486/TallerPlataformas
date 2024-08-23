@@ -406,7 +406,8 @@ input#check {
     }
 
     form {
-        padding: 10px;
+        padding: 30px;
+        top: 200px;
         max-width: 100%;
     }
 
@@ -414,3 +415,4 @@ input#check {
         padding: 15px;
     }
 }
+

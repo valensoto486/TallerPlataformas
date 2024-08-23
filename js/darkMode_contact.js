@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTheme = themeLink.getAttribute('href');
         const newTheme = currentTheme === 'css/contact.css' ? 'css/contact.dark.css' : 'css/contact.css';
         themeLink.setAttribute('href', newTheme);
-        localStorage.setItem('theme', newTheme); // Guarda el tema seleccionado en localStorage
+        localStorage.setItem('theme', Theme); // Guarda el tema seleccionado en localStorage
+        currentTheme = newTheme;
     });
 });
+
 
 

@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cargar el tema preferido desde localStorage
     const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
+    if (!currentTheme) {
+        currentTheme = 'css/register.css';
+    }else if (currentTheme) {
         themeLink.setAttribute('href', currentTheme);
     } else {
         themeLink.setAttribute('href', 'css/register.css'); // Establece el light mode por defecto

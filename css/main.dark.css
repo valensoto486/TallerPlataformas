@@ -375,6 +375,56 @@ footer a {
         padding: .5rem 5rem;
     }
 
+
+}
+
+@media (max-width:1030px) {
+    .hero {
+        text-align: center;
+        margin-top: 0;
+        border-radius: 8px;
+        height: 700px;
+
+    }
+    .beneficios {
+        position: absolute;
+        top: 450px;
+        right: 60px;
+        width: 50%;
+        max-width: 350px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+        height: auto;
+    }
+
+    form {
+        position: absolute;
+        top: 100px;
+        right: 15px;
+        width: 50%;
+        max-width: 450px ;
+        padding: 20px;
+        border-radius: 8px;
+        transform: translateY(50% - 10px);
+    }
+
+    .contact-form {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .banner-carousel {
+        position: absolute;
+        top: 30%;
+        left: 15px;
+        transform: translateY(-50%);
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+
 }
 
 @media (max-width:768px) {
@@ -385,7 +435,6 @@ footer a {
     .header-wrap {
         position: fixed;
         width: 100%;
-        background-color: var(--color2);
         padding: 0;
         top: 0;
         z-index: 9999;
@@ -401,6 +450,7 @@ footer a {
 
     i.toggle-menu {
         display: flex;
+        background-color: var(--color4);
     }
 
     ul.main-menu,
@@ -409,11 +459,11 @@ footer a {
         left: 0;
         margin: 0;
         padding: 0;
+        background-color: var(--color2);
     }
 
     ul.main-menu {
         position: fixed;
-        background-color: var(--color2);
         z-index: 10000;
     }
 
@@ -441,7 +491,6 @@ footer a {
         right: 0;
         width: 50%;
         max-width: 350px;
-        color: var(--color3);
         padding: 10px;
         border-radius: 5px;
         z-index: 1;
@@ -455,10 +504,7 @@ footer a {
         width: 50%;
         max-width: 300px;
         padding: 20px;
-        background: var(--color8);
-        color: var(--color1);
         border-radius: 8px;
-        box-shadow: 0 0 10px var(--color15);
         transform: translateY(50% - 10px);
     }
 
@@ -475,23 +521,57 @@ footer a {
         width: 300px;
         height: 400px;
         overflow: hidden;
-        border: 2px solid var(--color11);
     }
 
 }
 
 @media (max-width: 480px) {
+    .hero {
+        text-align: center;
+        height: 1200px;
+        margin-top: 0;
+        border-radius: 8px;
+    }
     .beneficios {
         font-size: 14px;
         max-width: 100%;
     }
 
     form {
-        padding: 10px;
-        max-width: 100%;
+        position: absolute;
+        top: 70px;
+        right: 35px;
+        max-width: 500px;
+        padding: 50px;
+        border-radius: 8px;
     }
 
     .contact-form {
-        padding: 15px;
+        max-width: 0px;
+        margin: 0px auto;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .beneficios {
+        position: absolute;
+        top: 480px;
+        right: 75px;
+        width: 50%;
+        max-width: 350px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+        height: auto;
+    }
+
+    .banner-carousel {
+        position: center;
+        top: 115%;
+        left: 30px;
+        transform: translateY(-50%);
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
     }
 }

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTheme = themeLink.getAttribute('href');
         const newTheme = currentTheme === 'css/about.css' ? 'css/about.dark.css' : 'css/about.css';
         themeLink.setAttribute('href', newTheme);
-        localStorage.setItem('theme', newTheme); // Guarda el tema seleccionado en localStorage
+        localStorage.setItem('theme', Theme); // Guarda el tema seleccionado en localStorage
     });
 });
 
