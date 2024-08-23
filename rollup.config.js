@@ -2,7 +2,6 @@ import { terser } from "rollup-plugin-terser";
 import commonjs from '@rollup/plugin-commonjs';
 import image from '@rollup/plugin-image';
 import javascriptObfuscator from 'javascript-obfuscator';
-import html from '@rollup/plugin-html';
 
 export default {
   input: {
@@ -22,8 +21,8 @@ export default {
     
   },
   output: {
-    file: 'dist/bundle.js', //Genera mi archivo bundle :)
-    format: 'iife',
+    dir: 'dist', //Mi directorio de salida
+    format: 'esm',
     sourcemap: true
   },
   plugins: [
