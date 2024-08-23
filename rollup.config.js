@@ -16,6 +16,7 @@ export default {
     resolve(),
     commonjs(),
     image(),
+  
     {
       name: 'obfuscator',
       generateBundle(options, bundle) {
