@@ -1,31 +1,58 @@
 import { terser } from "rollup-plugin-terser";
-import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import less from 'rollup-plugin-less';
 import image from '@rollup/plugin-image';
-import url from 'rollup-plugin-url';
+import javascriptObfuscator from 'javascript-obfuscator';
+import html from '@rollup/plugin-html';
 
 export default {
-  input: 'src/js/main.js',
+  input: {
+    contact: 'js/contact.js',
+    darkModeAbout: 'js/darkMode_about.js',
+    darkModeContact: 'js/darkMode_contact.js',
+    darkModelogin: 'js/darkMode_login.js',
+    darkModeRegister: 'js/darkMode_register.js',
+    darkMode: 'js/darkMode.js',
+    idioma: 'js/idioma.js',
+    idiomaEspañol: 'js/idioma/es.js',
+    idiomaIngles: 'js/idioma/en.js',
+    login: 'js/login.js',
+    main: 'js/main.js',
+    register: 'js/register.js',
+    storage: 'js/main.js',
+    
+  },
   output: {
     file: 'dist/bundle.js', //Genera mi archivo bundle :)
     format: 'iife',
     sourcemap: true
   },
   plugins: [
+    html({
+      title: 'Mi Aplicación',
+    }),
     less({
         output: 'dist/styles.css', //Genera un archivo css
         compress: true, //Para Minimizar el CSS
         sourceMap: true, // Generar mapa de origen para el CSS
     }),
-    resolve(),
     commonjs(),
     terser(),
     image(),
-    url({
-      limit: 10 * 1024, // Convertir archivos menores a 10kb a URLs de datos
-      include: ['**/*.png', '**/*.jpg', '**/*.gif'],
-      emitFiles: true
-    })
+
+    {
+      name: 'obfuscator',
+      generateBundle(options, bundle) {
+        Object.keys(bundle).forEach(fileName => {
+          const file = bundle[fileName];
+          if (file.type === 'chunk') {
+            file.code = javascriptObfuscator.obfuscate(file.code, {
+              compact: true,
+              controlFlowFlattening: true,
+            }).getObfuscatedCode();
+          }
+        });
+      }
+    }
   ]
 };
