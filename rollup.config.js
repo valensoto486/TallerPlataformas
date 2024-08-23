@@ -4,24 +4,9 @@ import image from '@rollup/plugin-image';
 import javascriptObfuscator from 'javascript-obfuscator';
 
 export default {
-  input: {
-    contact: 'js/contact.js',
-    darkModeAbout: 'js/darkMode_about.js',
-    darkModeContact: 'js/darkMode_contact.js',
-    darkModelogin: 'js/darkMode_login.js',
-    darkModeRegister: 'js/darkMode_register.js',
-    darkMode: 'js/darkMode.js',
-    idioma: 'js/idioma.js',
-    idiomaEspañol: 'js/idioma/es.js',
-    idiomaIngles: 'js/idioma/en.js',
-    login: 'js/login.js',
-    main: 'js/main.js',
-    register: 'js/register.js',
-    storage: 'js/main.js',
-    
-  },
-  output: {
-    dir: 'dist', //Mi directorio de salida
+  input: 'js/main.js',
+  output: { //Mi directorio de salida
+    file: "dist/bundle.js",
     format: 'esm',
     sourcemap: true
   },
