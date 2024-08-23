@@ -1,6 +1,5 @@
 import { terser } from "rollup-plugin-terser";
 import commonjs from '@rollup/plugin-commonjs';
-import less from 'rollup-plugin-less';
 import image from '@rollup/plugin-image';
 import javascriptObfuscator from 'javascript-obfuscator';
 import html from '@rollup/plugin-html';
@@ -28,18 +27,9 @@ export default {
     sourcemap: true
   },
   plugins: [
-    html({
-      title: 'Mi Aplicación',
-    }),
-    less({
-        output: 'dist/styles.css', //Genera un archivo css
-        compress: true, //Para Minimizar el CSS
-        sourceMap: true, // Generar mapa de origen para el CSS
-    }),
-    commonjs(),
     terser(),
+    commonjs(),
     image(),
-
     {
       name: 'obfuscator',
       generateBundle(options, bundle) {
