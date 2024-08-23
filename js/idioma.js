@@ -1,6 +1,8 @@
-import Polyglot from "node-polyglot";
+import Polyglot from 'node-polyglot';
 import english from "./idioma/en";
 import espanol from "./idioma/es";
+
+<script src="https://cdn.jsdelivr.net/npm/node-polyglot@2.4.0/dist/polyglot.min.js"></script>
 
 let polyglot;
 let btn_es, btn_en;
@@ -22,17 +24,17 @@ function control_idioma(){
 }
 
 function cambiarIdioma(locale){
-    if(locale == "en")
-    {
-        polyglot.locale("en");
-        polyglot.extend(english);
-    }  
-    if(locale == "es")
-    {
-        polyglot.locale("es");
-        polyglot.extend(espanol);
-    }  
-    cargarTextos();
+  if(locale == "en")
+  {
+      polyglot.locale("en");
+      polyglot.extend(english);
+  }  
+  if(locale == "es")
+  {
+      polyglot.locale("es");
+      polyglot.extend(espanol);
+  }  
+  cargarTextos();
 }
 
 function isSpanish(){
@@ -65,6 +67,8 @@ function getLocale() {
       document.getElementById("menu_1").innerHTML = polyglot.t("menu_1");
       document.getElementById("menu_2").innerHTML = polyglot.t("menu_2");
       document.getElementById("menu_3").innerHTML = polyglot.t("menu_3");
+      document.getElementById("menu_4").innerHTML = polyglot.t("menu_4");
+      document.getElementById("menu_5").innerHTML = polyglot.t("menu_5");
       document.getElementById("formulario_1").innerHTML = polyglot.t("formulario_1");
       document.getElementById("formulario_2").innerHTML = polyglot.t("formulario_2");
       document.getElementById("formulario_3").innerHTML = polyglot.t("formulario_3");

@@ -4,6 +4,8 @@ export default {
     "menu_1":"Home",
     "menu_2":"Contact Us",
     "menu_3":"About Us",
+    "menu_4":"Log In",
+    "menu_5":"Register",
 
     /* Formulario */
     "formulario_1": "Receive Discounts:",

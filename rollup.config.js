@@ -2,6 +2,7 @@ import { terser } from "rollup-plugin-terser";
 import commonjs from '@rollup/plugin-commonjs';
 import image from '@rollup/plugin-image';
 import javascriptObfuscator from 'javascript-obfuscator';
+import resolve from '@rollup/plugin-node-resolve';
 
 export default {
   input: 'js/main.js',
@@ -12,6 +13,7 @@ export default {
   },
   plugins: [
     terser(),
+    resolve(),
     commonjs(),
     image(),
     {
